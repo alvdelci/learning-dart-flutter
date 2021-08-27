@@ -29,21 +29,18 @@ class _TinderSplashState extends State<TinderSplash> {
                 width: 200,
                 child: Image.asset('assets/image/tinder_logo.png'),
               ),
-              // Text(
-              //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-              //     style: TextStyle(color: Colors.white)),
-              // Chip(
-              //   label: Text('Login with Google'),
-              //   avatar: CircleAvatar(
-              //     backgroundImage: AssetImage('assets/image/wpp_icon.png'),
-              //   ),
-              // ),
-              // Chip(
-              //   label: Text('Login with Google'),
-              //   avatar: CircleAvatar(
-              //     backgroundImage: AssetImage('assets/image/wpp_icon.png'),
-              //   ),
-              // )
+              SizedBox(
+                height: 300,
+              ),
+              InkWell(
+                  onTap: () => {},
+                  child: Container(
+                    height: 40,
+                    width: 240,
+                    child: Center(
+                      child: Text("LOGIN WITH GOOGLE"),
+                    ),
+                  )),
             ],
           )),
         ));
