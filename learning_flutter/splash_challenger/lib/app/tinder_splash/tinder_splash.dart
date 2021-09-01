@@ -32,15 +32,43 @@ class _TinderSplashState extends State<TinderSplash> {
               SizedBox(
                 height: 300,
               ),
-              InkWell(
-                  onTap: () => {},
-                  child: Container(
-                    height: 40,
-                    width: 240,
-                    child: Center(
-                      child: Text("LOGIN WITH GOOGLE"),
-                    ),
-                  )),
+              Container(
+                child: Column(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        onPrimary: Colors.black,
+                        primary: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18.0)
+                        )
+                      ),
+                        onPressed: () => {
+                              ScaffoldMessenger.of(context)
+                                  .showSnackBar(const SnackBar(
+                                content: Text('Clicou para fazer login.'),
+                              ))
+                            },
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            SizedBox(
+                              height: 35,
+                              width: 35,
+                              child: Padding(
+                                padding: EdgeInsets.only(right: 10.0),
+                                child: Image.asset("assets/image/google_icon.png"),
+                              )
+                            ),
+                            SizedBox(
+                              child: Text("LOGIN WITH GOOGLE"),
+                            )
+                          ],
+                        ))
+                  ],
+                ),
+              ),
             ],
           )),
         ));
