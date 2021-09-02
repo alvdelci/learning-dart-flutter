@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'app/facebook_splash/facebook_splash.dart';
+import 'app/pages/facebook_splash/facebook_splash.dart';
+import 'app/pages/tinder_splash/tinder_splash.dart';
 
 class MyApp extends StatelessWidget {
   
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
       title: "Splash App",
       theme: ThemeData(
       ),
-      home: FacebookSplash(),
+      //home: FacebookSplash(),
+      home: TinderSplash(),
     );
   }
 }
