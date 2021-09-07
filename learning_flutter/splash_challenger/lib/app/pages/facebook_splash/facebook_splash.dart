@@ -71,13 +71,6 @@ class _FacebookSplashState extends State<FacebookSplash> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        
-        backgroundColor: Colors.transparent,
-        onPressed: () => Navigator.push(
-            context, MaterialPageRoute(builder: (context) => WhatsappSplash())),
-        child: Image.asset('assets/image/wpp_icon.png'),
-      ),
     );
   }
 }

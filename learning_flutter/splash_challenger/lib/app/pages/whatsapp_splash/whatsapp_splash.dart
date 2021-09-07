@@ -52,19 +52,6 @@ class _WhatsappSplashState extends State<WhatsappSplash> {
           ],
         ),
       ),
-            floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.blue,
-        onPressed: () => Navigator.pop(context),
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(50),
-            image: DecorationImage(
-              image: AssetImage('assets/image/fb_icon.png'),
-            ),
-          ),
-        ),
-      ),
     );
   }
 }
