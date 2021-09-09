@@ -43,27 +43,27 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         elevation: 0,
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.white,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
               icon: Image.asset('assets/image/fb_icon2.png',
-                  height: 40, width: 40),
+                  height: 30, width: 30),
               label: 'Facebook',
               backgroundColor: Colors.blue),
           BottomNavigationBarItem(
               icon: Image.asset('assets/image/tinder_icon.png',
-                  height: 40, width: 40),
+                  height: 30, width: 30),
               label: 'Tinder',
               backgroundColor: Colors.orange),
           BottomNavigationBarItem(
               icon: Image.asset('assets/image/wpp_icon.png',
-                  height: 40, width: 40),
+                  height: 30, width: 30),
               label: 'Whatsapp',
               backgroundColor: Colors.green),
         ],
         currentIndex: _selectedIndex,
         selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
-        selectedItemColor: Colors.orange,
+        selectedItemColor: _selectedIndex == 0 ? Colors.blue : _selectedIndex == 1 ? Colors.orange : Colors.green,
         onTap: _itemTapped,
       ),
     );
