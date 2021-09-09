@@ -9,7 +9,6 @@ class _WhatsappSplashState extends State<WhatsappSplash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
