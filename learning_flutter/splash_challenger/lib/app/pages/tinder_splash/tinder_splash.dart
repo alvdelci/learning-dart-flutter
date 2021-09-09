@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class TinderSplash extends StatefulWidget {
@@ -100,15 +101,15 @@ class _TinderSplashState extends State<TinderSplash> {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           SizedBox(
-                              height: 38,
-                              width: 38,
+                              height: 36,
+                              width: 36,
                               child: Padding(
                                 padding: EdgeInsets.only(right: 10.0),
                                 child:
                                     Image.asset("assets/image/google_icon.png"),
                               )),
                           SizedBox(
-                            child: Text("LOG IN WITH GOOGLE"),
+                            child: Text("LOG IN WITH GOOGLE", style: GoogleFonts.roboto()),
                           ),
                           SizedBox(
                             width: 35,
@@ -135,14 +136,14 @@ class _TinderSplashState extends State<TinderSplash> {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           SizedBox(
-                              height: 40,
-                              width: 40,
+                              height: 38,
+                              width: 38,
                               child: Padding(
                                 padding: EdgeInsets.only(left: 5.0),
                                 child: Image.asset("assets/image/message_icon.png"),
                               )),
                           SizedBox(
-                            child: Text("LOG IN WITH PHONE NUMBER"),
+                            child: Text("LOG IN WITH PHONE NUMBER", style: GoogleFonts.roboto()),
                           ),
                           SizedBox(
                             width: 35,
