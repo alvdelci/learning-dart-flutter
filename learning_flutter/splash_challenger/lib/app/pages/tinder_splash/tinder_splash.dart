@@ -53,7 +53,7 @@ class _TinderSplashState extends State<TinderSplash> {
                           text: "By clicking Log In, you agree with our ",
                           children: [
                             TextSpan(
-                                text: "Terms. ",
+                                text: "Terms.",
                                 style: TextStyle(
                                     decoration: TextDecoration.underline),
                                 recognizer: TapGestureRecognizer()
@@ -61,16 +61,16 @@ class _TinderSplashState extends State<TinderSplash> {
                                     _launchUrl();
                                   }),
                             TextSpan(
-                                text: "Learn how we process your data in our "),
+                                text: " Learn how we process your data in our "),
                             TextSpan(
-                                text: "Privacy Policy ",
+                                text: "Privacy Policy",
                                 style: TextStyle(
                                     decoration: TextDecoration.underline),
                                 recognizer: TapGestureRecognizer()
                                   ..onTap = () {
                                     _launchUrl();
                                   }),
-                            TextSpan(text: "and "),
+                            TextSpan(text: " and "),
                             TextSpan(
                                 text: "Cookies Policy",
                                 style: TextStyle(
