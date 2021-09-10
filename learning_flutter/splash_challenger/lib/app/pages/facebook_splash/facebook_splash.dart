@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:splash_challenger/app/pages/whatsapp_splash/whatsapp_splash.dart';
 
 class FacebookSplash extends StatefulWidget {
   @override
