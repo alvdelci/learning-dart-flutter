@@ -5,7 +5,6 @@ import 'package:splash_challenger/app/pages/tinder_splash/tinder_splash.dart';
 import 'package:splash_challenger/app/pages/whatsapp_splash/whatsapp_splash.dart';
 
 class HomeScreen extends StatefulWidget {
-  ///HomeScreen({Key? key}) : super(key: key);
 
   @override
   _HomeScreenState createState() => _HomeScreenState();

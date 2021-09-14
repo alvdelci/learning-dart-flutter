@@ -93,7 +93,7 @@ class _InstagramProfileState extends State<InstagramProfile> {
           SizedBox(
             height: 15,
           ),
-          //Linha de avatar, posts, followers e following
+          // Linha de avatar, posts, followers e following
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -171,6 +171,28 @@ class _InstagramProfileState extends State<InstagramProfile> {
               SizedBox(
                 width: 5,
               )
+            ],
+          ),
+          SizedBox(
+            height: 15,
+          ),
+          // Bio
+          Row(
+            children: [
+              SizedBox(
+                width: 15,
+              ),
+              Text(
+                "Delcimario Alves",
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
+              Flexible(
+                child: Text(
+                  "Minha bio aqui bem grande aqui para ativar a quebra de linha no flutter. Se inscreve e dá like!",
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
             ],
           ),
         ],
