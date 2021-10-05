@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class InstagramProfile extends StatefulWidget {
@@ -102,16 +104,10 @@ class _InstagramProfileState extends State<InstagramProfile> {
               ),
               //Avatar
               Container(
-                height: 90,
-                width: 90,
+                height: 80,
+                width: 80,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
-                  border: Border(
-                    top: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
-                    left: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
-                    right: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
-                    bottom: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
-                  ),
                   image: DecorationImage(
                     image: AssetImage("assets/image/me.jpeg"),
                   ),
@@ -176,7 +172,7 @@ class _InstagramProfileState extends State<InstagramProfile> {
           SizedBox(
             height: 15,
           ),
-          // Bio
+          // Username
           Row(
             children: [
               SizedBox(
@@ -187,10 +183,140 @@ class _InstagramProfileState extends State<InstagramProfile> {
                 style:
                     TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
               ),
-              Flexible(
-                child: Text(
-                  "Minha bio aqui bem grande aqui para ativar a quebra de linha no flutter. Se inscreve e dá like!",
-                  style: TextStyle(color: Colors.white),
+            ],
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          //Bio
+          Row(
+            children: [
+              SizedBox(
+                width: 15,
+              ),
+              Container(
+                child: Flexible(
+                  child: Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: 10,
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 15,
+          ),
+          //Edit profile
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              SizedBox(
+                width: 10,
+              ),
+              InkWell(
+                onTap: () {
+                  print("Clicou em Edit Profile!");
+                },
+                child: Container(
+                  width: 325,
+                  height: 35,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(4),
+                      border: Border(
+                        top: BorderSide(width: 0.5, color: Color(0xFFFFFFFF)),
+                        left: BorderSide(width: 0.5, color: Color(0xFFFFFFFF)),
+                        right: BorderSide(width: 0.5, color: Color(0xFFFFFFFF)),
+                        bottom:
+                            BorderSide(width: 0.5, color: Color(0xFFFFFFFF)),
+                      )),
+                  child: Center(
+                    child: Text(
+                      "Edit Profile",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: 1,
+              ),
+              InkWell(
+                onTap: () {
+                  print("Clicou na Arrow_back");
+                },
+                child: Container(
+                  height: 35,
+                  width: 35,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(4),
+                      border: Border(
+                        top: BorderSide(width: 0.5, color: Color(0xFFFFFFFF)),
+                        left: BorderSide(width: 0.5, color: Color(0xFFFFFFFF)),
+                        right: BorderSide(width: 0.5, color: Color(0xFFFFFFFF)),
+                        bottom:
+                            BorderSide(width: 0.5, color: Color(0xFFFFFFFF)),
+                      )),
+                  child: Icon(
+                    Icons.keyboard_arrow_down,
+                    color: Colors.white,
+                    size: 26.0,
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: 10,
+              )
+            ],
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Row(
+            children: [
+              SizedBox(
+                width: 10,
+              ),
+              Container(
+                height: 75,
+                width: 75,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  border: Border(
+                    top: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
+                    left: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
+                    right: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
+                    bottom: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
+                  ),
+                  image: DecorationImage(
+                    image: AssetImage("assets/image/yo2.jpeg"),
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              Container(
+                height: 75,
+                width: 75,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  border: Border(
+                    top: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
+                    left: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
+                    right: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
+                    bottom: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
+                  ),
+                  image: DecorationImage(
+                    image: AssetImage("assets/image/yo.jpeg"),
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             ],
