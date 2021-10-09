@@ -14,8 +14,8 @@ class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
   List<Widget> _screenList = <Widget>[
     FacebookSplash(),
-    TinderSplash(),
     WhatsappSplash(),
+    TinderSplash(),
     InstagramProfile()
   ];
 
@@ -43,14 +43,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 30, width: 30),
               label: 'Facebook'),
           BottomNavigationBarItem(
-            icon: Image.asset('assets/image/tinder_icon.png',
-                height: 30, width: 30),
-            label: 'Tinder',
-          ),
-          BottomNavigationBarItem(
             icon:
                 Image.asset('assets/image/wpp_icon.png', height: 30, width: 30),
             label: 'Whatsapp',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset('assets/image/tinder_icon.png',
+                height: 30, width: 30),
+            label: 'Tinder',
           ),
           BottomNavigationBarItem(
             icon: Image.asset(
@@ -66,9 +66,9 @@ class _HomeScreenState extends State<HomeScreen> {
         selectedItemColor: _selectedIndex == 0
             ? Colors.blue
             : _selectedIndex == 1
-                ? Colors.orange
+                ? Colors.green
                 : _selectedIndex == 2
-                    ? Colors.green
+                    ? Colors.orange
                     : Colors.pink,
         onTap: _itemTapped,
       ),
