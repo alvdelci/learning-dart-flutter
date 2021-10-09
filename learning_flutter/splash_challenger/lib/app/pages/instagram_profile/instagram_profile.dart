@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class InstagramProfile extends StatefulWidget {
@@ -120,7 +118,7 @@ class _InstagramProfileState extends State<InstagramProfile> {
               Column(
                 children: [
                   Text(
-                    "6",
+                    "0",
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
@@ -136,7 +134,7 @@ class _InstagramProfileState extends State<InstagramProfile> {
               Column(
                 children: [
                   Text(
-                    "475",
+                    "0",
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
@@ -152,7 +150,7 @@ class _InstagramProfileState extends State<InstagramProfile> {
               Column(
                 children: [
                   Text(
-                    "519",
+                    "0",
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
@@ -227,11 +225,11 @@ class _InstagramProfileState extends State<InstagramProfile> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4),
                       border: Border(
-                        top: BorderSide(width: 0.5, color: Color(0xFFFFFFFF)),
-                        left: BorderSide(width: 0.5, color: Color(0xFFFFFFFF)),
-                        right: BorderSide(width: 0.5, color: Color(0xFFFFFFFF)),
+                        top: BorderSide(width: 1, color: Color(0xcccccccc)),
+                        left: BorderSide(width: 1, color: Color(0xcccccccc)),
+                        right: BorderSide(width: 1, color: Color(0xcccccccc)),
                         bottom:
-                            BorderSide(width: 0.5, color: Color(0xFFFFFFFF)),
+                            BorderSide(width: 1, color: Color(0xcccccccc)),
                       )),
                   child: Center(
                     child: Text(
@@ -257,16 +255,16 @@ class _InstagramProfileState extends State<InstagramProfile> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4),
                       border: Border(
-                        top: BorderSide(width: 0.5, color: Color(0xFFFFFFFF)),
-                        left: BorderSide(width: 0.5, color: Color(0xFFFFFFFF)),
-                        right: BorderSide(width: 0.5, color: Color(0xFFFFFFFF)),
+                        top: BorderSide(width: 1, color: Color(0xcccccccc)),
+                        left: BorderSide(width: 1, color: Color(0xcccccccc)),
+                        right: BorderSide(width: 1, color: Color(0xcccccccc)),
                         bottom:
-                            BorderSide(width: 0.5, color: Color(0xFFFFFFFF)),
+                            BorderSide(width: 1, color: Color(0xcccccccc)),
                       )),
                   child: Icon(
                     Icons.keyboard_arrow_down,
                     color: Colors.white,
-                    size: 26.0,
+                    size: 23.0,
                   ),
                 ),
               ),
@@ -278,24 +276,38 @@ class _InstagramProfileState extends State<InstagramProfile> {
           SizedBox(
             height: 20,
           ),
+          //Highlights
           Row(
             children: [
               SizedBox(
                 width: 10,
               ),
               Container(
-                height: 75,
-                width: 75,
+                height: 70,
+                width: 70,
+                padding: EdgeInsets.all(1.4),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
                   border: Border(
-                    top: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
-                    left: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
-                    right: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
-                    bottom: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
+                    top: BorderSide(width: 0.5, color: Color(0xcccccccc)),
+                    left: BorderSide(width: 0.5, color: Color(0xcccccccc)),
+                    right: BorderSide(width: 0.5, color: Color(0xcccccccc)),
+                    bottom: BorderSide(width: 0.5, color: Color(0xcccccccc)),
                   ),
-                  image: DecorationImage(
-                    image: AssetImage("assets/image/yo2.jpeg"),
+                ),
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    border: Border(
+                      top: BorderSide(width: 1.0, color: Color(0xFF000000)),
+                      left: BorderSide(width: 1.0, color: Color(0xFF000000)),
+                      right: BorderSide(width: 1.0, color: Color(0xFF000000)),
+                      bottom: BorderSide(width: 1.0, color: Color(0xFF000000)),
+                    ),
+                    image: DecorationImage(
+                      image: AssetImage("assets/image/yo2.jpeg"),
+                      fit: BoxFit.cover
+                    ),
                   ),
                 ),
               ),
@@ -303,8 +315,40 @@ class _InstagramProfileState extends State<InstagramProfile> {
                 width: 20,
               ),
               Container(
-                height: 75,
-                width: 75,
+                height: 70,
+                width: 70,
+                padding: EdgeInsets.all(1.4),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  border: Border(
+                    top: BorderSide(width: 0.5, color: Color(0xcccccccc)),
+                    left: BorderSide(width: 0.5, color: Color(0xcccccccc)),
+                    right: BorderSide(width: 0.5, color: Color(0xcccccccc)),
+                    bottom: BorderSide(width: 0.5, color: Color(0xcccccccc)),
+                  ),
+                ),
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    border: Border(
+                      top: BorderSide(width: 1.0, color: Color(0xFF000000)),
+                      left: BorderSide(width: 1.0, color: Color(0xFF000000)),
+                      right: BorderSide(width: 1.0, color: Color(0xFF000000)),
+                      bottom: BorderSide(width: 1.0, color: Color(0xFF000000)),
+                    ),
+                    image: DecorationImage(
+                      image: AssetImage("assets/image/yo.jpeg"),
+                      fit: BoxFit.cover
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              Container(
+                height: 70,
+                width: 70,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
                   border: Border(
@@ -313,14 +357,22 @@ class _InstagramProfileState extends State<InstagramProfile> {
                     right: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
                     bottom: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
                   ),
-                  image: DecorationImage(
-                    image: AssetImage("assets/image/yo.jpeg"),
-                    fit: BoxFit.cover,
-                  ),
+                  // image: DecorationImage(
+                  //   image: AssetImage(""),
+                  //   fit: BoxFit.cover,
+                  // ),
                 ),
               ),
             ],
           ),
+          SizedBox(
+            height: 25,
+          ),
+          //Publicações
+          Container(
+
+          )
+
         ],
       ),
     );
